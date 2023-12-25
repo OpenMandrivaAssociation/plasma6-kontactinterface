@@ -1,7 +1,7 @@
 
 Summary:        Kontact Plugin Interface Library
 Name:           plasma6-kontactinterface
-Version:	24.01.80
+Version:	24.01.85
 Release:	1
 License:        GPLv2+
 Group:          System/Base
