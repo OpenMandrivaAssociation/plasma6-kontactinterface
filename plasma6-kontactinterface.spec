@@ -1,7 +1,7 @@
 
 Summary:        Kontact Plugin Interface Library
 Name:           plasma6-kontactinterface
-Version:	24.01.85
+Version:	24.01.90
 Release:	1
 License:        GPLv2+
 Group:          System/Base
@@ -45,22 +45,19 @@ BuildRequires: qt6-qttools-assistant
 %description
 Kontact Plugin Interface Library
 
-%files -f kontactinterfaces5.lang
+%files -f kontactinterfaces6.lang
 %{_datadir}/qlogging-categories6/kontactinterface.categories
 %{_datadir}/qlogging-categories6/kontactinterface.renamecategories
 
 #--------------------------------------------------------------------
 
 %define kf6kontactinterface_major 6
-%define oldlibkf6kontactinterface %mklibname kf6kontactinterface 6
 %define libkf6kontactinterface %mklibname kpimkontactinterface
 
 %package -n %libkf6kontactinterface
 Summary:      Kontact Plugin Interface Library
 Group:        System/Libraries
 Requires:     %name = %version-%release
-Obsoletes:    %mklibname kf6kontactinterface 4
-Obsoletes:    %{mklibname kf6kontactinterface 6}
 
 %description -n %libkf6kontactinterface
 Kontact Plugin Interface Library
@@ -70,7 +67,6 @@ Kontact Plugin Interface Library
 
 #--------------------------------------------------------------------
 
-%define oldkf6kontactinterface_devel %mklibname kf6kontactinterface -d
 %define kf6kontactinterface_devel %mklibname kpim6kontactinterface -d
 
 %package -n %kf6kontactinterface_devel
@@ -79,7 +75,6 @@ Summary:        Devel stuff for %name
 Group:          Development/KDE and Qt
 Requires:       %libkf6kontactinterface = %version-%release
 Provides:       %name-devel = %{version}-%{release}
-%rename %oldkf6kontactinterface_devel
 
 %description -n %kf6kontactinterface_devel
 This package contains header files needed if you wish to build applications
@@ -102,4 +97,4 @@ based on %name.
 
 %install
 %ninja_install -C build
-%find_lang kontactinterfaces5
+%find_lang kontactinterfaces6
