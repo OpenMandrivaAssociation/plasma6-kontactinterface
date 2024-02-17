@@ -15,7 +15,7 @@ Group:          System/Base
 %define ftpdir stable
 %endif
 %if 0%{?git:1}
-Source0:	https://invent.kde.org/pim/kontactinterface/-/archive/%{gitbranch}/kontactinterface-%{gitbranchd}.tar.bz2#/kontactinterface-20240217.tar.bz2
+Source0:	https://invent.kde.org/pim/kontactinterface/-/archive/%{gitbranch}/kontactinterface-%{gitbranchd}.tar.bz2#/kontactinterface-%{git}.tar.bz2
 %else
 Source0:	http://download.kde.org/%{ftpdir}/release-service/%{version}/src/kontactinterface-%{version}.tar.xz
 %endif
