@@ -1,10 +1,10 @@
-%define git 20240217
+#define git 20240217
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Summary:        Kontact Plugin Interface Library
 Name:           plasma6-kontactinterface
-Version:	24.01.96
+Version:	24.02.0
 Release:	%{?git:0.%{git}.}1
 License:        GPLv2+
 Group:          System/Base
