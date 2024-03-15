@@ -5,7 +5,7 @@
 Summary:        Kontact Plugin Interface Library
 Name:           plasma6-kontactinterface
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:        GPLv2+
 Group:          System/Base
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
