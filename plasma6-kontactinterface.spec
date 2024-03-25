@@ -59,7 +59,7 @@ Kontact Plugin Interface Library
 #--------------------------------------------------------------------
 
 %define kf6kontactinterface_major 6
-%define libkf6kontactinterface %mklibname kpimkontactinterface
+%define libkf6kontactinterface %mklibname KPim6KontactInterface
 
 %package -n %libkf6kontactinterface
 Summary:      Kontact Plugin Interface Library
@@ -74,7 +74,7 @@ Kontact Plugin Interface Library
 
 #--------------------------------------------------------------------
 
-%define kf6kontactinterface_devel %mklibname kpim6kontactinterface -d
+%define kf6kontactinterface_devel %mklibname KPim6KontactInterface -d
 
 %package -n %kf6kontactinterface_devel
 
