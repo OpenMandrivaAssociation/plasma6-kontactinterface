@@ -41,6 +41,8 @@ BuildRequires:	cmake(KF6IconThemes)
 
 BuildRequires:  boost-devel
 
+BuildRequires:	pkgconfig(xkbcommon)
+
 BuildRequires:	libxml2-utils
 BuildRequires:	docbook-dtds
 BuildRequires:	docbook-style-xsl
